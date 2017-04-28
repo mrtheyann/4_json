@@ -56,12 +56,18 @@ $ python pprint_json.py <path to file>
         "| 4,15 | 63.4340 | 63 |\n",
         "| 4,20 | 66.6863 | 67 |\n",
         "+------+---------+----+\n"
-       ]
-      }
-    ]
-  }
-]
+         . . . 
+```
 
+# How to Launch Tests
+###### You can launch auto tests via
+```#!bash
+python tests.py
+```
+
+###### You can also launch any of them manually via
+```#!bash
+python pprint_json.py "./testcases/actual/{testname}"
 ```
 
 # Project Goals
