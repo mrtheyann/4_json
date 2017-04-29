@@ -8,7 +8,7 @@ def load_json_input(filepath):
     return json_input
 
 
-def pretty_print_json(json_input):
+def prettify_json(json_input):
     pretty_json = json.dumps(json_input, sort_keys=True, indent=4, ensure_ascii=False)
     return pretty_json
 
@@ -16,7 +16,7 @@ def pretty_print_json(json_input):
 def main():
     try:
         json_input = load_json_input(argv[1])
-        print(pretty_print_json(json_input))
+        print(prettify_json(json_input))
     except IndexError:
         print('Invalid filepath')
     except FileNotFoundError:
